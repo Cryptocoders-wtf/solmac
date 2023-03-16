@@ -1,3 +1,4 @@
-# web3-vue3-startup-kit
+# Solmac
 
-Start up kit to develop Web3 DApps web site and smart contract.
+Solidity package management collection.
+

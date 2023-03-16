@@ -13,15 +13,96 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
+      name: "ISolmac",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ISolmac__factory>;
+    getContractFactory(
       name: "Lock",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lock__factory>;
+    getContractFactory(
+      name: "Solmac",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Solmac__factory>;
+    getContractFactory(
+      name: "ITestContractVersionOne",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ITestContractVersionOne__factory>;
+    getContractFactory(
+      name: "ITestContractVersionTwo",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ITestContractVersionTwo__factory>;
+    getContractFactory(
+      name: "SolmacTest",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.SolmacTest__factory>;
+    getContractFactory(
+      name: "TestContractVersionOne",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TestContractVersionOne__factory>;
+    getContractFactory(
+      name: "TestContractVersionOneOne",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TestContractVersionOneOne__factory>;
+    getContractFactory(
+      name: "TestContractVersionOneTwo",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TestContractVersionOneTwo__factory>;
+    getContractFactory(
+      name: "TestContractVersionTwo",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TestContractVersionTwo__factory>;
 
+    getContractAt(
+      name: "ISolmac",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ISolmac>;
     getContractAt(
       name: "Lock",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Lock>;
+    getContractAt(
+      name: "Solmac",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Solmac>;
+    getContractAt(
+      name: "ITestContractVersionOne",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ITestContractVersionOne>;
+    getContractAt(
+      name: "ITestContractVersionTwo",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ITestContractVersionTwo>;
+    getContractAt(
+      name: "SolmacTest",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.SolmacTest>;
+    getContractAt(
+      name: "TestContractVersionOne",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TestContractVersionOne>;
+    getContractAt(
+      name: "TestContractVersionOneOne",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TestContractVersionOneOne>;
+    getContractAt(
+      name: "TestContractVersionOneTwo",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TestContractVersionOneTwo>;
+    getContractAt(
+      name: "TestContractVersionTwo",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TestContractVersionTwo>;
 
     // default types
     getContractFactory(
